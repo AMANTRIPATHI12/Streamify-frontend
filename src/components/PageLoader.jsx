@@ -1,0 +1,14 @@
+import React from 'react'
+import { LoaderIcon } from 'react-hot-toast';
+import { useThemeStore } from '../store/useThemeStore';
+const PageLoader = () => {
+  const {theme} =useThemeStore();
+  return (
+    <div className='min-h-screen flex items-centre justify-center'data-theme={theme}>
+      <LoaderIcon className="animate-spin size-10 text-primary" />
+      
+    </div>
+  )
+}
+
+export default PageLoader
